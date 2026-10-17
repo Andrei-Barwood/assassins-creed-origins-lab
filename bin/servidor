@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift File.expand_path("../lib", __dir__)
+require "origins_lab"
+require "origins_lab/web_app"
+
+port = (ENV["PORT"] || 4567).to_i
+puts "======================================================================"
+puts "  LABORATORIO NARRATIVO & MITIGACIÓN — ASSASSIN'S CREED ORIGINS"
+puts "  Dashboard Web Sinatra activo en: http://localhost:#{port}"
+puts "======================================================================"
+puts "Rutas disponibles:"
+puts "  - http://localhost:#{port}/ (Catálogo de 21 Episodios y 5 Actos)"
+puts "  - http://localhost:#{port}/side-quests (Misiones Secundarias)"
+puts "  - http://localhost:#{port}/trophies (Hoja de Ruta del Platino & Prevención)"
+puts "  - http://localhost:#{port}/easter-eggs (Secretos Isu & Crossovers)"
+puts "  - http://localhost:#{port}/mitigations (Matriz de Mitigación Táctica)"
+puts "======================================================================"
+puts "Presione Ctrl+C para detener el servidor."
+
+OriginsLab::WebApp.run!(port: port, bind: "0.0.0.0")

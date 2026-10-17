@@ -1,0 +1,119 @@
+<div style="margin-bottom: 1.5rem;">
+  <a href="/" style="color: var(--gold); text-decoration: none; font-size: 0.9rem;">← Volver al Catálogo de Episodios</a>
+</div>
+
+<div class="hero">
+  <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
+    <span class="badge badge-gold">Episodio <%= @ep_info.id %></span>
+    <span class="badge badge-blue"><%= @ep_info.act_name %></span>
+    <span class="badge badge-green">Nivel Recomendado: <%= @ep_info.level_recommended %></span>
+    <% if @ep_info.target %>
+      <span class="badge badge-red">Blanco: <%= @ep_info.target %></span>
+    <% end %>
+  </div>
+  <h1><%= @ep_info.title %></h1>
+  <p><%= @ep_info.description %></p>
+</div>
+
+<div style="display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+  <!-- Columna Izquierda: Eventos de la Simulación -->
+  <div>
+    <h2 style="color: var(--gold-light); margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem;">
+      Registro Cronológico de Eventos (<%= @outcome[:events].size %>)
+    </h2>
+    <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem;">
+      <% @outcome[:events].each do |ev| %>
+        <div style="padding: 0.6rem 0; border-bottom: 1px solid #23253a;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.2rem;">
+            <strong style="color: var(--gold); font-size: 0.9rem;">#<%= format('%02d', ev.sequence) %> <%= ev.id %></strong>
+            <span style="font-size: 0.75rem; color: var(--text-muted);"><%= ev.scene %></span>
+          </div>
+          <% if ev.actor %>
+            <span style="font-size: 0.8rem; color: var(--accent-blue);">Actor: [<%= ev.actor %>]</span>
+          <% end %>
+          <% if ev.target %>
+            <span style="font-size: 0.8rem; color: var(--accent-red);">→ Objetivo: [<%= ev.target %>]</span>
+          <% end %>
+          <% unless ev.data.empty? %>
+            <p style="font-size: 0.85rem; color: #a5a5ba; margin-top: 0.2rem; font-family: monospace;">
+              <%= ev.data.map { |k, v| "#{k}: #{v}" }.join(" | ") %>
+            </p>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <!-- Columna Derecha: Estado Final del Animus -->
+  <div>
+    <h2 style="color: var(--gold-light); margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem;">
+      Estado del Mundo & Animus
+    </h2>
+    <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem;">
+      <ul style="list-style: none; font-size: 0.9rem;">
+        <li style="padding: 0.4rem 0; border-bottom: 1px solid #23253a;"><strong>Ubicación:</strong> <%= @outcome[:state].location %></li>
+        <li style="padding: 0.4rem 0; border-bottom: 1px solid #23253a;"><strong>Periodo:</strong> <%= @outcome[:state].time_period %></li>
+        <li style="padding: 0.4rem 0; border-bottom: 1px solid #23253a;"><strong>Nivel de Bayek:</strong> <%= @outcome[:state].level %></li>
+        <li style="padding: 0.4rem 0; border-bottom: 1px solid #23253a;"><strong>Dracmas:</strong> <%= @outcome[:state].drachmas %></li>
+        <li style="padding: 0.4rem 0; border-bottom: 1px solid #23253a;"><strong>Baratijas (Trinkets):</strong> <%= @outcome[:state].trinkets_count %> / 100</li>
+        <li style="padding: 0.4rem 0; border-bottom: 1px solid #23253a;"><strong>Nivel Hoja Oculta:</strong> <%= @outcome[:state].hidden_blade_level %> / 10</li>
+        <li style="padding: 0.4rem 0; border-bottom: 1px solid #23253a;">
+          <strong>Blancos Eliminados:</strong>
+          <span style="color: var(--accent-red);"><%= @outcome[:state].order_targets.keys.join(", ") %></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Sección de Spoilers Completos -->
+<div class="box-spoiler">
+  <h3 style="color: #ff7675; margin-bottom: 0.5rem;">⚠ Spoilers Completos de Trama & Lore:</h3>
+  <ul style="margin-left: 1.5rem; font-size: 0.95rem;">
+    <% @outcome[:spoilers].each do |sp| %>
+      <li style="margin-bottom: 0.3rem;"><%= sp %></li>
+    <% end %>
+  </ul>
+</div>
+
+<!-- Sección de Mitigación y Prevención -->
+<div class="box-mitigation">
+  <h3 style="color: #55efc4; margin-bottom: 0.5rem;">🛡 Protocolos de Mitigación & Prevención Táctica:</h3>
+  <ul style="margin-left: 1.5rem; font-size: 0.95rem;">
+    <% @outcome[:mitigations].each do |mit| %>
+      <li style="margin-bottom: 0.3rem;"><%= mit %></li>
+    <% end %>
+  </ul>
+</div>
+
+<!-- Sección de Easter Eggs -->
+<div class="box-easter">
+  <h3 style="color: #74b9ff; margin-bottom: 0.5rem;">★ Easter Eggs, Secretos Isu & Curiosidades Históricas:</h3>
+  <ul style="margin-left: 1.5rem; font-size: 0.95rem;">
+    <% @outcome[:easter_eggs].each do |ee| %>
+      <li style="margin-bottom: 0.3rem;"><%= ee %></li>
+    <% end %>
+  </ul>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
+  <div style="background: var(--bg-card); border: 1px solid var(--border); padding: 1.2rem; border-radius: 8px;">
+    <h3 style="color: var(--gold); margin-bottom: 0.5rem;">Misiones Secundarias en la Zona</h3>
+    <ul style="margin-left: 1.2rem; font-size: 0.9rem;">
+      <% @outcome[:side_quests].each do |sq| %>
+        <li style="margin-bottom: 0.2rem;"><%= sq %></li>
+      <% end %>
+    </ul>
+    <a href="/side-quests?region=<%= @ep_info.region.split(' ').first %>" style="display: inline-block; margin-top: 0.8rem; color: var(--gold); font-size: 0.85rem;">Ver todas las secundarias de <%= @ep_info.region %> →</a>
+  </div>
+
+  <div style="background: var(--bg-card); border: 1px solid var(--border); padding: 1.2rem; border-radius: 8px;">
+    <h3 style="color: var(--gold); margin-bottom: 0.5rem;">Trofeos Vinculados & Prevención</h3>
+    <ul style="margin-left: 1.2rem; font-size: 0.9rem;">
+      <% @outcome[:trophies].each do |tr| %>
+        <li style="margin-bottom: 0.2rem;"><%= tr %></li>
+      <% end %>
+    </ul>
+    <a href="/trophies" style="display: inline-block; margin-top: 0.8rem; color: var(--gold); font-size: 0.85rem;">Consultar Hoja de Ruta del Platino →</a>
+  </div>
+</div>

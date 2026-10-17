@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <ApiVersion>6.0</ApiVersion>
+  <Id>com.snocomm.dron_centinela</Id>
+  <Version>1.0.0</Version>
+  <Author>SNOCOMM / Cátedra de Cibernética Teórica</Author>
+  <Name>Dron Sentinela - Matriz Táctica MITRE ATT&amp;CK</Name>
+  <Category>Tactical Cybernetics / Pattern Matrix</Category>
+  <Description>
+    Matriz táctica de 48 parámetros basada en 'Estocástica Biomecánica y Fusión de Sensores: Análisis Predictivo del Dron Centinela'.
+    Implementa radar FMCW mmWave (77-81 GHz), Filtro de Kalman Extendido (EKF) 12D, cronometría canónica (72 BPM / 12 LPB / 14.4 Hz),
+    psicoacústica del seisillo modal sin jitter (7.2 Hz) con colapso IACC/Haas, y locomoción cuadrúpeda asimétrica basada en deconstrucción granular
+    del Amen Break en ventanas Markov de 96 líneas (0Sxx / 0Rxy). Incluye motor de modulación en vivo durante el movimiento del tracker.
+  </Description>
+  <Homepage>https://github.com/snocomm/dron-sentinela</Homepage>
+  <Platform>Windows, Mac, Linux</Platform>
+</RenoiseScriptingTool>

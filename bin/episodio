@@ -1,0 +1,255 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift File.expand_path("../lib", __dir__)
+require "origins_lab"
+
+def print_help
+  puts "=" * 80
+  puts "ASSASSIN'S CREED ORIGINS — LABORATORIO NARRATIVO & DE MITIGACIÓN (ORIGINS LAB)"
+  puts "=" * 80
+  puts "Uso:"
+  puts "  bin/episodio <ID_EPISODIO> [OPCIONES]"
+  puts "  bin/episodio list"
+  puts "  bin/episodio side-quests [REGION]"
+  puts "  bin/episodio trophies [RIESGO]"
+  puts "  bin/episodio easter-eggs"
+  puts "  bin/episodio mitigations"
+  puts ""
+  puts "Opciones de inspección para un episodio:"
+  puts "  --spoilers       Muestra spoilers completos de trama y personajes."
+  puts "  --easter-eggs    Muestra secretos, conexiones y easter eggs."
+  puts "  --trophies       Muestra trofeos vinculados y riesgos de pérdida."
+  puts "  --side-quests    Muestra misiones secundarias recomendadas en la zona."
+  puts "  --mitigations    Muestra protocolos de mitigación y prevención de bugs/combate."
+  puts "  --all            Muestra el informe analítico completo."
+  puts "  --seed <NUM>     Fija la semilla pseudoaleatoria (default: 42)."
+  puts ""
+  puts "Listado de Actos y Episodios Principales (01 al 21):"
+
+  (1..5).each do |act_num|
+    eps = OriginsLab::Manifest.by_act(act_num)
+    next if eps.empty?
+
+    puts ""
+    puts eps.first.act_name.upcase
+    eps.each do |ep|
+      target_str = ep.target ? " [Objetivo: #{ep.target}]" : ""
+      puts "  #{ep.id} (#{ep.slug}): #{ep.title} (Nv #{ep.level_recommended} en #{ep.region})#{target_str}"
+    end
+  end
+  puts ""
+  puts "Códigos de salida:"
+  puts "  0: Escenario ejecutado con éxito."
+  puts "  2: Error de ejecución o precondición insatisfecha."
+  puts "  3: Identificador inválido o comando desconocido."
+  puts "=" * 80
+end
+
+args = ARGV.dup
+
+if args.empty? || args.include?("-h") || args.include?("--help")
+  print_help
+  exit(args.empty? ? 3 : 0)
+end
+
+command = args.first.downcase
+
+case command
+when "list"
+  print_help
+  exit 0
+
+when "side-quests"
+  args.shift
+  region_filter = args.shift
+  quests = if region_filter
+             OriginsLab::Manifest.side_quests_by_region(region_filter)
+           else
+             OriginsLab::Manifest.all_side_quests
+           end
+
+  puts "=" * 80
+  puts "CATÁLOGO DE MISIONES SECUNDARIAS DE ASSASSIN'S CREED ORIGINS (#{quests.size} misiones)"
+  puts region_filter ? "Filtrado por región: '#{region_filter}'" : "Todas las regiones"
+  puts "=" * 80
+  quests.each_with_index do |sq, idx|
+    puts format("%02d. [%s] %s (Nivel %d) — Otorgante: %s", idx + 1, sq.region, sq.title, sq.level, sq.giver)
+    puts "    Descripción: #{sq.description}"
+    puts "    Recompensas: #{sq.rewards} | Notas: #{sq.narrative_notes}"
+    puts ""
+  end
+  exit 0
+
+when "trophies"
+  args.shift
+  risk_filter = args.shift
+  trophies = if risk_filter
+               OriginsLab::Manifest.trophies_by_risk(risk_filter)
+             else
+               OriginsLab::Manifest.all_trophies
+             end
+
+  puts "=" * 80
+  puts "HOJA DE RUTA DE TROFEOS & PREVENCIÓN DE BUGS (#{trophies.size} trofeos)"
+  puts risk_filter ? "Filtrado por nivel de riesgo: '#{risk_filter}'" : "Todos los trofeos analizados"
+  puts "=" * 80
+  trophies.each do |tr|
+    miss_str = tr.missable ? "[PERDIBLE / MISSABLE]" : "[ACUMULATIVO]"
+    puts "• #{tr.title} (#{tr.grade}) #{miss_str} — Riesgo: #{tr.risk_level.upcase}"
+    puts "  Objetivo: #{tr.description}"
+    puts "  Estrategia de Mitigación / Prevención: #{tr.mitigation_strategy}"
+    puts ""
+  end
+  exit 0
+
+when "easter-eggs"
+  puts "=" * 80
+  puts "CATÁLOGO DE EASTER EGGS, SECRETOS Y CONEXIONES HISTÓRICAS"
+  puts "=" * 80
+  OriginsLab::Manifest.all_easter_eggs.each do |ee|
+    puts "★ [#{ee.category}] #{ee.title}"
+    puts "  Ubicación: #{ee.location}"
+    puts "  Descripción: #{ee.description}"
+    puts "  Cómo encontrarlo: #{ee.how_to_find}"
+    puts "  Trascendencia en el Lore: #{ee.lore_significance}"
+    puts ""
+  end
+  exit 0
+
+when "mitigations"
+  puts "=" * 80
+  puts "MATRIZ DE MITIGACIÓN Y PREVENCIÓN TÁCTICA (ASSASSIN'S CREED ORIGINS)"
+  puts "=" * 80
+  OriginsLab::Manifest.all_mitigations.each do |mit|
+    puts "🛡 [#{mit.domain}] #{mit.title}"
+    puts "  Amenaza: #{mit.threat_description}"
+    puts "  Protocolo de Prevención: #{mit.prevention_protocol}"
+    puts "  Protocolo de Recuperación: #{mit.recovery_protocol}"
+    puts ""
+  end
+  exit 0
+end
+
+raw_id = args.shift
+show_spoilers = args.include?("--spoilers") || args.include?("--all")
+show_easter_eggs = args.include?("--easter-eggs") || args.include?("--all")
+show_trophies = args.include?("--trophies") || args.include?("--all")
+show_side_quests = args.include?("--side-quests") || args.include?("--all")
+show_mitigations = args.include?("--mitigations") || args.include?("--all")
+
+seed = 42
+if (idx = args.index("--seed"))
+  seed = (args[idx + 1] || 42).to_i
+end
+
+normalized = OriginsLab::Manifest.normalize_id(raw_id)
+ep_info = OriginsLab::Manifest.find(normalized)
+
+unless ep_info
+  warn "Error: Episodio '#{raw_id}' no reconocido en el catálogo (IDs válidos: 01 a 21)."
+  warn "Ejecute 'bin/episodio --help' para ver el listado de episodios."
+  exit 3
+end
+
+scenario_file = File.expand_path("../lib/origins_lab/scenarios/ep#{ep_info.id}.rb", __dir__)
+
+unless File.exist?(scenario_file)
+  warn "Error: El archivo de escenario '#{scenario_file}' no fue encontrado."
+  exit 2
+end
+
+require scenario_file
+
+scenario_class = begin
+  Object.const_get(ep_info.class_name)
+rescue NameError => e
+  warn "Error de resolución de clase #{ep_info.class_name}: #{e.message}"
+  exit 2
+end
+
+begin
+  scenario = scenario_class.new(seed: seed)
+  outcome = scenario.run
+
+  puts "=" * 80
+  puts "EPISODIO #{ep_info.id}: #{ep_info.title.upcase}"
+  puts "Acto: #{ep_info.act_name}"
+  puts "Región: #{ep_info.region} | Nivel Recomendado: #{ep_info.level_recommended}"
+  puts "Objetivo de la Orden: #{ep_info.target || 'Ninguno (Desarrollo / Alianza)'}"
+  puts "=" * 80
+  puts ""
+  puts "Eventos cronológicos registrados (#{outcome[:events].size}):"
+  outcome[:events].each do |ev|
+    actor_str = ev.actor ? "[#{ev.actor}]" : ""
+    target_str = ev.target ? "-> [#{ev.target}]" : ""
+    data_str = ev.data.empty? ? "" : " | #{ev.data.inspect}"
+    puts "  #{format('%02d', ev.sequence)}. #{ev.id} #{actor_str} #{target_str} (escena: #{ev.scene})#{data_str}"
+  end
+  puts ""
+  puts "Estado Final del Mundo:"
+  puts "  Ubicación: #{outcome[:state].location}"
+  puts "  Periodo Temporal: #{outcome[:state].time_period}"
+  puts "  Nivel de Bayek: #{outcome[:state].level} (Puntos de Habilidad: #{outcome[:state].ability_points})"
+  puts "  Dracmas: #{outcome[:state].drachmas} | Baratijas acumuladas: #{outcome[:state].trinkets_count}"
+  puts "  Nivel Hoja Oculta: #{outcome[:state].hidden_blade_level} / 10"
+  puts "  Equipo Crafteado: #{outcome[:state].craft_gear.inspect}"
+  puts "  Objetivos Eliminados: #{outcome[:state].order_targets.keys.inspect}"
+  puts "  Trofeos Desbloqueados: #{outcome[:state].trophies_unlocked.inspect}"
+  puts ""
+  puts "Resumen Narrativo:"
+  puts "  #{outcome[:summary]}"
+
+  if show_spoilers || !outcome[:spoilers].empty?
+    puts ""
+    puts "SPOILERS COMPLETOS DE HISTORIA Y LORE:"
+    outcome[:spoilers].each do |sp|
+      puts "  ⚠ #{sp}"
+    end
+  end
+
+  if show_easter_eggs || !outcome[:easter_eggs].empty?
+    puts ""
+    puts "EASTER EGGS Y SECRETOS:"
+    outcome[:easter_eggs].each do |ee|
+      puts "  ★ #{ee}"
+    end
+  end
+
+  if show_mitigations || !outcome[:mitigations].empty?
+    puts ""
+    puts "ESTRATEGIAS DE MITIGACIÓN Y PREVENCIÓN:"
+    outcome[:mitigations].each do |mit|
+      puts "  🛡 #{mit}"
+    end
+  end
+
+  if show_side_quests || !outcome[:side_quests].empty?
+    puts ""
+    puts "MISIONES SECUNDARIAS RECOMENDADAS:"
+    outcome[:side_quests].each do |sq|
+      puts "  ✓ #{sq}"
+    end
+  end
+
+  if show_trophies || !outcome[:trophies].empty?
+    puts ""
+    puts "TROFEOS VINCULADOS & PREVENCIÓN DE PÉRDIDA:"
+    outcome[:trophies].each do |tr|
+      puts "  🏆 #{tr}"
+    end
+  end
+
+  puts "=" * 80
+  exit 0
+rescue OriginsLab::PreconditionError => e
+  warn "Error de precondición en #{ep_info.id}: #{e.message}"
+  exit 2
+rescue OriginsLab::ExecutionError => e
+  warn "Error de ejecución en #{ep_info.id}: #{e.message}"
+  exit 2
+rescue StandardError => e
+  warn "Error inesperado durante la simulación de #{ep_info.id}: #{e.message}"
+  warn e.backtrace.first(5).join("\n")
+  exit 2
+end

@@ -1,0 +1,34 @@
+<div class="hero">
+  <h1>Catálogo Exhaustivo de Misiones Secundarias</h1>
+  <p>Todas las misiones secundarias de Assassin's Creed Origins organizadas por región geográfica, nivel requerido, personaje otorgante, recompensas e impacto narrativo.</p>
+</div>
+
+<!-- Filtro por Región -->
+<div style="margin-bottom: 2rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+  <a href="/side-quests" class="badge <%= @region.nil? || @region.empty? ? 'badge-gold' : 'badge-blue' %>" style="text-decoration: none; padding: 0.5rem 1rem;">Todas las Regiones</a>
+  <% @regions.each do |reg| %>
+    <a href="/side-quests?region=<%= reg %>" class="badge <%= @region == reg ? 'badge-gold' : 'badge-blue' %>" style="text-decoration: none; padding: 0.5rem 1rem;"><%= reg %></a>
+  <% end %>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 1.2rem;">
+  <% @side_quests.each do |sq| %>
+    <div class="card">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+          <h3 style="margin-bottom: 0;"><%= sq.title %></h3>
+          <span class="badge badge-gold">Nivel <%= sq.level %></span>
+        </div>
+        <div class="meta">
+          <span class="badge badge-blue"><%= sq.region %></span>
+          <span>Otorgante: <strong><%= sq.giver %></strong></span>
+        </div>
+        <p style="font-size: 0.9rem; color: #cfcfd8; margin-bottom: 0.8rem;"><%= sq.description %></p>
+        <div style="background: #12131c; padding: 0.6rem; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border);">
+          <p><strong>Recompensas:</strong> <%= sq.rewards %></p>
+          <p style="color: var(--text-muted); margin-top: 0.2rem;"><strong>Notas:</strong> <%= sq.narrative_notes %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

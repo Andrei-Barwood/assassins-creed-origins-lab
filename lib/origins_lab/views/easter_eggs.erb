@@ -1,0 +1,27 @@
+<div class="hero">
+  <h1>Catálogo de Easter Eggs, Secretos Isu & Conexiones de Lore</h1>
+  <p>Secretos precursores, crossovers oficiales, anomalías del desierto y conexiones históricas que enlazan Assassin's Creed Origins con toda la franquicia (desde AC1 y AC2 hasta Valhalla y Mirage).</p>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+  <% @easter_eggs.each do |ee| %>
+    <div class="card" style="border-left: 4px solid var(--accent-blue);">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+          <h3 style="margin-bottom: 0; color: #74b9ff;"><%= ee.title %></h3>
+          <span class="badge badge-blue"><%= ee.category %></span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--gold-light); margin-bottom: 0.8rem;">📍 Ubicación: <strong><%= ee.location %></strong></p>
+        <p style="font-size: 0.95rem; color: #cfcfd8; margin-bottom: 0.8rem;"><%= ee.description %></p>
+        <div style="background: #121524; padding: 0.8rem; border-radius: 4px; border: 1px solid var(--border); margin-bottom: 0.5rem;">
+          <strong style="color: var(--gold);">¿Cómo Encontrarlo?</strong>
+          <p style="font-size: 0.9rem; margin-top: 0.2rem;"><%= ee.how_to_find %></p>
+        </div>
+        <div class="box-easter" style="margin-top: 0;">
+          <strong style="color: #74b9ff;">Trascendencia en el Lore de la Saga:</strong>
+          <p style="font-size: 0.9rem; margin-top: 0.2rem;"><%= ee.lore_significance %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

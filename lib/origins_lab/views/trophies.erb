@@ -1,0 +1,35 @@
+<div class="hero">
+  <h1>Hoja de Ruta del Platino & Prevención de Pérdida de Trofeos</h1>
+  <p>Análisis minucioso de los 51 trofeos del juego base con especial énfasis en los trofeos altamente perdibles (<em>missable</em>), con riesgo de bug o de grindeo extremo (<em>Old Habits, Reduce Reuse Recycle, Overheating</em>).</p>
+</div>
+
+<!-- Filtros por Riesgo -->
+<div style="margin-bottom: 2rem; display: flex; gap: 0.5rem;">
+  <a href="/trophies" class="badge <%= @risk.nil? || @risk.empty? ? 'badge-gold' : 'badge-blue' %>" style="text-decoration: none; padding: 0.5rem 1rem;">Todos los Trofeos</a>
+  <a href="/trophies?risk=Máximo" class="badge <%= @risk == 'Máximo' ? 'badge-gold' : 'badge-red' %>" style="text-decoration: none; padding: 0.5rem 1rem;">Riesgo Máximo (Perdibles)</a>
+  <a href="/trophies?risk=Crítico" class="badge <%= @risk == 'Crítico' ? 'badge-gold' : 'badge-red' %>" style="text-decoration: none; padding: 0.5rem 1rem;">Riesgo Crítico (Bugs de Mapa)</a>
+  <a href="/trophies?risk=Medio" class="badge <%= @risk == 'Medio' ? 'badge-gold' : 'badge-blue' %>" style="text-decoration: none; padding: 0.5rem 1rem;">Riesgo Medio</a>
+  <a href="/trophies?risk=Bajo" class="badge <%= @risk == 'Bajo' ? 'badge-gold' : 'badge-green' %>" style="text-decoration: none; padding: 0.5rem 1rem;">Riesgo Bajo</a>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr; gap: 1.2rem;">
+  <% @trophies.each do |tr| %>
+    <div class="card" style="border-left: 4px solid <%= tr.risk_level == 'Máximo' || tr.risk_level == 'Crítico' ? 'var(--accent-red)' : 'var(--gold)' %>;">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+          <h3 style="margin-bottom: 0;"><%= tr.title %></h3>
+          <div>
+            <span class="badge <%= tr.grade == 'Platino' ? 'badge-gold' : (tr.grade == 'Oro' ? 'badge-gold' : (tr.grade == 'Plata' ? 'badge-blue' : 'badge-blue')) %>"><%= tr.grade %></span>
+            <span class="badge <%= tr.missable ? 'badge-red' : 'badge-green' %>"><%= tr.missable ? 'PERDIBLE' : 'ACUMULATIVO' %></span>
+            <span class="badge <%= tr.risk_level == 'Máximo' || tr.risk_level == 'Crítico' ? 'badge-red' : 'badge-gold' %>">Riesgo: <%= tr.risk_level %></span>
+          </div>
+        </div>
+        <p style="font-size: 0.95rem; color: #cfcfd8; margin-bottom: 0.8rem;"><strong>Objetivo Oficial:</strong> <%= tr.description %></p>
+        <div class="box-mitigation" style="margin-top: 0;">
+          <strong style="color: var(--accent-green);">Estrategia de Mitigación & Prevención:</strong>
+          <p style="font-size: 0.9rem; margin-top: 0.2rem;"><%= tr.mitigation_strategy %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

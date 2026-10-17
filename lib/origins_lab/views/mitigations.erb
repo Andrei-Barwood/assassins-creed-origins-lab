@@ -1,0 +1,26 @@
+<div class="hero">
+  <h1>Matriz de Mitigación Táctica & Prevención de Riesgos</h1>
+  <p>Protocolos analíticos para mitigar bloqueos de progresión, muerte prematura por Phylakes o elefantes de guerra, bugs de sincronización y pérdida irremediable de trofeos de platino.</p>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+  <% @mitigations.each do |mit| %>
+    <div class="card" style="border-left: 4px solid var(--accent-green);">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+          <h3 style="margin-bottom: 0; color: #55efc4;"><%= mit.title %></h3>
+          <span class="badge badge-green"><%= mit.domain %></span>
+        </div>
+        <p style="font-size: 0.95rem; color: #ff7675; margin-bottom: 0.8rem;"><strong>⚠ Descripción de la Amenaza:</strong> <%= mit.threat_description %></p>
+        <div class="box-mitigation" style="margin-top: 0; margin-bottom: 0.6rem;">
+          <strong style="color: var(--accent-green);">Protocolo Preventivo (Proactivo):</strong>
+          <p style="font-size: 0.9rem; margin-top: 0.2rem;"><%= mit.prevention_protocol %></p>
+        </div>
+        <div style="background: #18201b; padding: 0.8rem; border-radius: 4px; border: 1px solid #27ae60;">
+          <strong style="color: #a8e6cf;">Protocolo de Recuperación (Reactivo):</strong>
+          <p style="font-size: 0.9rem; margin-top: 0.2rem;"><%= mit.recovery_protocol %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

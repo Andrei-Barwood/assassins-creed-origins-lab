@@ -1,0 +1,47 @@
+<div class="hero">
+  <h1>Assassin's Creed Origins: Simulador & Análisis Episódico</h1>
+  <p>Campaña completa de Bayek de Siwa y Aya (Amunet): 21 episodios canónicos, spoilers exhaustivos, catálogo completo de misiones secundarias, secretos Isu, hoja de ruta del trofeo de Platino y matriz de prevención de bugs y riesgos.</p>
+</div>
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="num"><%= @total_episodes %></div>
+    <div class="lbl">Episodios Principales (5 Actos)</div>
+  </div>
+  <div class="stat-card">
+    <div class="num"><%= @total_side_quests %></div>
+    <div class="lbl">Misiones Secundarias Mapeadas</div>
+  </div>
+  <div class="stat-card">
+    <div class="num"><%= @total_trophies %></div>
+    <div class="lbl">Trofeos & Prevención Platino</div>
+  </div>
+  <div class="stat-card">
+    <div class="num"><%= @total_easter_eggs %></div>
+    <div class="lbl">Easter Eggs & Secretos Isu</div>
+  </div>
+</div>
+
+<% @acts.each do |act| %>
+  <div class="act-section">
+    <h2 class="act-title"><%= act[:act_name] %></h2>
+    <div class="episode-grid">
+      <% act[:episodes].each do |ep| %>
+        <div class="card">
+          <div>
+            <h3><%= ep.id %>. <%= ep.title %></h3>
+            <div class="meta">
+              <span class="badge badge-gold">Nivel <%= ep.level_recommended %></span>
+              <span class="badge badge-blue"><%= ep.region %></span>
+              <% if ep.target %>
+                <span class="badge badge-red">Objetivo: <%= ep.target %></span>
+              <% end %>
+            </div>
+            <p style="font-size: 0.9rem; color: #cfcfd8;"><%= ep.description %></p>
+          </div>
+          <a href="/episodes/<%= ep.id %>" class="btn">Examinar Episodio & Spoilers →</a>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>
