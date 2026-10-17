@@ -8,3 +8,4 @@ log/
 tmp/
 coverage/
 .byebug_history
+scratch/

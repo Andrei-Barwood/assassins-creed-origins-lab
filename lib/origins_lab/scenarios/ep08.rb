@@ -67,26 +67,27 @@ module OriginsLab
       end
 
       def generate_summary
-        "Episodio 08 completado: Taharqa se gana la confianza de Bayek combatiendo a su lado en Sais, para luego drogar su copa y revelar que él es 'El Escarabajo'."
+        "Sais / Delta del Nilo, 48 a.C. Bayek viaja al f\u00E9rtil y pantanoso Delta del Nilo para desenmascarar a 'El Escarabajo'. En Sais, la poblaci\u00F3n vive aterrorizada por los soldados que entierran a los disidentes vivos en las arenas del desierto. Bayek contacta a la familia del noble Ghupa y rescata a este \u00FAltimo en un campamento militar, solo para descubrir con horror que los torturadores le han extirpado la lengua para impedir que revele el nombre del verdugo. Bayek es acogido cordialmente por el yerno de Ghupa, Taharqa, un carism\u00E1tico maestro constructor que se ofrece a ayudar al Medjay. Sin embargo, durante una cena de aparente camarader\u00EDa, Taharqa ofrece una copa de vino envenenada con estramonio: Bayek pierde el conocimiento mientras Taharqa sonr\u00EDe fr\u00EDamente."
       end
 
       def spoilers
         [
-          "Taharqa es respetado en Sais como un héroe local que construye templos, ocultando que entierra vivos a los rebeldes.",
-          "El hijo de Taharqa, Kawab, idolatra a su padre sin sospechar de sus crímenes."
+          "La identidad de 'El Escarabajo': Taharqa es 'El Escarabajo'. Oculto tras una fachada de filantrop\u00EDa y proyectos de construcci\u00F3n de templos para el pueblo, Taharqa es el arquitecto del terror de la Orden en el Delta, eliminando a cualquiera que se oponga a la recaudaci\u00F3n de impuestos forzados.",
+          "La tragedia del silencio de Ghupa: Ghupa intentaba desesperadamente alertar a Bayek sobre su propio yerno con gestos desesperados, pero la hospitalidad fingida de Taharqa enga\u00F1\u00F3 los sentidos del Medjay.",
+          "El estramonio del Nilo: La droga utilizada por Taharqa no buscaba matar a Bayek en la mesa, sino someterlo a la tortura ceremonial predilecta de El Escarabajo: el entierro en vida en las dunas de Let\u00F3polis para que el sol y las hienas consuman su cuerpo."
         ]
       end
 
       def easter_eggs
         [
-          "En la villa de Taharqa hay estatuas de Khepri, el dios escarabajo que renace del fango."
+          "El culto a Neit en Sais: Sais era el centro neur\u00E1lgico del culto a la diosa guerrera tejedora Neit. En la ciudad pueden encontrarse tejedoras de lino que entonan plegarias sobre c\u00F3mo Neit teji\u00F3 el mundo a partir de las aguas primordiales del Nun.",
+          "La fauna agresiva del Delta: En los canales de Sais los hipop\u00F3tamos y cocodrilos tienen un comportamiento territorial agresivo codificado para atacar tanto a soldados ptolemaicos como a aldeanos."
         ]
       end
 
       def mitigations
         [
-          "Asegurar la habilidad 'Segundo Aire' para regenerar adrenalina antes del combate en las aldeas del Delta.",
-          "Completar 'Conflicts of Interest' para obtener 1250 XP adicionales antes de la emboscada."
+          "Preparaci\u00F3n previa a la copa envenenada: Antes de hablar con Taharqa en su villa para brindar, asegurarse de haber gastado todos los puntos de habilidad y sincronizado las atalayas de Sais. El episodio siguiente despojar\u00E1 temporalmente a Bayek de su equipo y montura."
         ]
       end
 

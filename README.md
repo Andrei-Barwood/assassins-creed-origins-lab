@@ -36,6 +36,9 @@ Este repositorio convierte el entorno de desarrollo en un **laboratorio de softw
 │   ├── episodio               # CLI ejecutable con filtros analíticos y subcomandos
 │   └── servidor               # Servidor web Sinatra en puerto 4567
 ├── config.ru                  # Punto de entrada para servidores Rack
+├── docs/
+│   └── episodios/             # 21 Dossiers narrativos exhaustivos (ep01 a ep21)
+│       ├── ep01_dossier.md ... ep21_dossier.md
 ├── lib/
 │   └── origins_lab/
 │       ├── base_scenario.rb   # Plantilla base abstracta de episodios

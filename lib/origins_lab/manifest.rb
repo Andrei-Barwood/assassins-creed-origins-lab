@@ -72,7 +72,7 @@ module OriginsLab
         level_recommended: 1,
         region: "Siwa",
         target: "Rudjek (La Garza)",
-        description: "Bayek regresa a Siwa tras un año de cacería. Ejecuta a Rudjek 'La Garza' clavándole la máscara de la Orden en el cráneo y rescata a su amigo Hepzefa."
+        description: "Invierno del 49 a.C. Bayek de Siwa regresa a su oasis natal tras un a\u00F1o de cacer\u00EDa implacable por el desierto l\u00EDbico. En las catacumbas de la Pir\u00E1mide Doblada, acorrala y ejecuta a Rudjek 'La Garza' incrust\u00E1ndole su propia m\u00E1scara de bronce en el cr\u00E1neo, reencontr\u00E1ndose despu\u00E9s con su hermano de armas Hepzefa para liberar la aldea."
       ),
       EpisodeInfo.new(
         id: "02",
@@ -84,7 +84,7 @@ module OriginsLab
         level_recommended: 5,
         region: "Siwa",
         target: "Medunamun (El Ibis)",
-        description: "Asalto al Templo de Amón en Siwa. Eliminación del sacerdote tirano Medunamun aplastándole la cabeza contra la Esfera de Edén Isu."
+        description: "Bajo el sol de Siwa, el monumental Templo de Am\u00F3n sufre las torturas y la extorsi\u00F3n de Medunamun 'El Ibis', quien intenta despertar el Orbe de Ed\u00E9n Isu. Bayek se infiltra por los andamios del santuario y machaca el cr\u00E1neo del sacerdote contra las losas del altar con la propia reliquia dorada, liberando a Siwa de la tiran\u00EDa."
       ),
       EpisodeInfo.new(
         id: "03",
@@ -96,7 +96,7 @@ module OriginsLab
         level_recommended: 8,
         region: "Siwa / Lago Mareotis",
         target: nil,
-        description: "Despedida de Siwa y juramento sobre el duelo de Khemu. Travesía a través del Desierto de Mareotis hacia la metrópolis de Alejandría."
+        description: "Con el oasis natal a salvo de sus opresores inmediatos, Bayek pronuncia un juramento sobre el recuerdo de Khemu y se despide de Hepzefa en las puertas fortificadas. Con arco en ristre y provisiones m\u00EDnimas, cruza la inmensidad del Desierto de Mareotis hacia la cosmopolita y traicionera metr\u00F3polis de Alejandr\u00EDa."
       ),
 
       # ACTO 2: LA METRÓPOLIS DE ALEJANDRÍA Y LA PRIMERA HOJA OCULTA (48 a.C.)
@@ -110,7 +110,7 @@ module OriginsLab
         level_recommended: 10,
         region: "Alejandría",
         target: "Actaeon (El Buitre) & Ktesos (El Carnero) [por Aya]",
-        description: "Reencuentro con Aya en el monumento de Serapis. Aya le entrega a Bayek la legendaria Hoja Oculta con la que Darío asesinó a Jerjes I."
+        description: "Alejandr\u00EDa deslumbra con sus avenidas de m\u00E1rmol y su gran biblioteca. En una cripta secreta bajo el monumento de Serapis, Bayek se re\u00FAne apasionadamente con su esposa Aya, quien le entrega la legendaria Hoja Oculta persa de Dar\u00EDo y revela haber ejecutado ya a dos conspiradores de la Orden: Actaeon y Ktesos."
       ),
       EpisodeInfo.new(
         id: "05",
@@ -122,7 +122,7 @@ module OriginsLab
         level_recommended: 11,
         region: "Alejandría",
         target: "Gennadios",
-        description: "Infiltración en la Guarnición militar de Akra para ejecutar a Gennadios. Sus últimas palabras desatan la persecución de los 10 Phylakes por todo Egipto."
+        description: "El prefecto militar Gennadios intensifica la cacer\u00EDa de rebeldes leales a Cleopatra en la capital. Bayek asalta la Guarnici\u00F3n de Akra, burla las patrullas de las almenas y atraviesa el cuello del comandante corrupto, desatando como represalia la cacer\u00EDa de los temibles diez Phylakes por todo el territorio egipcio."
       ),
       EpisodeInfo.new(
         id: "06",
@@ -134,7 +134,7 @@ module OriginsLab
         level_recommended: 12,
         region: "Alejandría",
         target: "Eudoros (La Serpiente)",
-        description: "Infiltración en los Baños Públicos de Alejandría. Bayek ejecuta a Eudoros en la terma de vapor y se corta accidentalmente el dedo anular con la hoja oculta."
+        description: "Infiltr\u00E1ndose en las vaporosas Termas P\u00FAblicas de Alejandr\u00EDa en pa\u00F1os menores, Bayek embosca a Eudoros 'La Serpiente' en el agua caliente. En el violento forcejeo que sigue, la Hoja Oculta se dispara con el pu\u00F1o cerrado y amputa el dedo anular de Bayek antes de degollar al escriba real, consagrando el rito de iniciaci\u00F3n de los Ocultos."
       ),
       EpisodeInfo.new(
         id: "07",
@@ -146,7 +146,7 @@ module OriginsLab
         level_recommended: 13,
         region: "Nomos de Canopo",
         target: nil,
-        description: "Audiencia secreta en el hipódromo de Canopo con Cleopatra VII y Apolodoro. Revelación de que 'La Serpiente' es la Orden entera y sus 4 lugartenientes."
+        description: "En la suntuosa villa de Apolodoro en el Nomos de Canopo, Bayek y Aya obtienen audiencia secreta con la reina depuesta Cleopatra VII. Deslumbrada por la valent\u00EDa de los esposos, Cleopatra los inviste como los Medjay protectores de todo Egipto y les encomienda la purga de las cuatro bestias de la Orden en las provincias."
       ),
 
       # ACTO 3: LA CACERÍA DE LAS CUATRO BESTIAS (48 - 47 a.C.)
@@ -160,7 +160,7 @@ module OriginsLab
         level_recommended: 15,
         region: "Sais / Delta del Nilo",
         target: nil,
-        description: "Investigación en Sais sobre las atrocidades del Escarabajo. Alianza con el respetado noble Taharqa, quien lo traiciona con vino drogado."
+        description: "El f\u00E9rtil y traicionero Delta del Nilo esconde el terror de 'El Escarabajo'. En Sais, Bayek rescata al noble Ghupa con la lengua extirpada y es acogido por su yerno, el fil\u00E1ntropo constructor Taharqa. Sin embargo, durante un brindis de aparente hospitalidad, Taharqa ofrece una copa envenenada con estramonio y captura al Medjay."
       ),
       EpisodeInfo.new(
         id: "09",
@@ -172,7 +172,7 @@ module OriginsLab
         level_recommended: 16,
         region: "Letópolis / Desierto",
         target: "Taharqa (El Escarabajo)",
-        description: "Bayek es enterrado hasta el cuello en la arena ardiente por Taharqa. Tras escapar con ayuda de su caballo y Senu, asalta el campamento y lo ajusticia."
+        description: "Bayek despierta enterrado vivo en la arena de Let\u00F3polis bajo un sol inclemente. Tras silbar a su montura y escapar de los carro\u00F1eros en medio de alucinaciones donde el cielo llueve escarabajos dorados, Bayek recupera su arsenal y clava su Hoja Oculta en el pecho de Taharqa frente a la mirada at\u00F3nita de su peque\u00F1o hijo Kawab."
       ),
       EpisodeInfo.new(
         id: "10",
@@ -184,7 +184,7 @@ module OriginsLab
         level_recommended: 19,
         region: "Guiza",
         target: "Khaliset (La Hiena)",
-        description: "Cacería en la meseta de Guiza y la Gran Esfinge. Duelo contra Khaliset, quien intenta resucitar a su hija muerta con la tecnología Isu de la Pirámide de Keops."
+        description: "En las entra\u00F1as de la Gran Pir\u00E1mide de Keops en Guiza, Bayek descubre el dolor enloquecido de Khaliset 'La Hiena', quien realiza sacrificios de prisioneros usando S\u00EDlice de la Primera Civilizaci\u00F3n intentando revivir a su hija difunta Esris. Bayek la persigue hasta la superficie y la abate en una feroz tormenta de arena."
       ),
       EpisodeInfo.new(
         id: "11",
@@ -196,7 +196,7 @@ module OriginsLab
         level_recommended: 21,
         region: "Menfis",
         target: "Hetepi (El Lagarto)",
-        description: "Menfis está maldita por la peste y el envenenamiento del Toro Sagrado Apis. Bayek desenmascara al Sumo Sacerdote Hetepi y lo ejecuta en el templo."
+        description: "La antigua capital sagrada de Menfis se desmorona por una extra\u00F1a pestilencia que envenena el aire y los templos. Guiado por los sacerdotes de Ptah, Bayek viaja en trance m\u00EDstico al Duat para derrotar a la serpiente Apep, desenmascarando y ejecutando al conspirador Hetepi ('El Lagarto'), identificado por su bufanda azul y tos seca."
       ),
       EpisodeInfo.new(
         id: "12",
@@ -208,7 +208,7 @@ module OriginsLab
         level_recommended: 25,
         region: "Faiyum",
         target: nil,
-        description: "Infiltración en Faiyum. Alianza con la pequeña Shadya y su familia para obtener el libro de cuentas. Trágico ahogamiento de Shadya en el lago."
+        description: "El pr\u00F3spero oasis de Faiyum padece las confiscaciones de 'El Cocodrilo'. Bayek se al\u00EDa con la resistencia local para recuperar la libreta de cuentas custodiada por la peque\u00F1a Shadya. Sin embargo, los soldados interceptan a la ni\u00F1a y Bayek vive su mayor tragedia al hallarla ahogada en el fondo del lago atada a una piedra de molino."
       ),
       EpisodeInfo.new(
         id: "13",
@@ -220,7 +220,7 @@ module OriginsLab
         level_recommended: 28,
         region: "Krokodilopolis",
         target: "Berenike (El Cocodrilo)",
-        description: "Bayek entra como gladiador en la Arena de Krokodilopolis para cazar a la matrona Berenike, vengando el asesinato despiadado de la pequeña Shadya."
+        description: "Para vengar la muerte de Shadya, Bayek se inscribe como gladiador en la Arena de Krokodilopolis junto a su vieja amiga de Siwa, la feroz cazadora Kensa. Tras vencer a los Hermanos Galos, Bayek asalta la villa de la terrateniente Berenike ('El Cocodrilo'), vence a Kensa y ejecuta a la usurpadora en su propio lecho."
       ),
 
       # ACTO 4: LA TRAICIÓN DE CLEOPATRA Y EL SITIO DE ALEJANDRÍA (47 a.C.)
@@ -234,7 +234,7 @@ module OriginsLab
         level_recommended: 31,
         region: "Alejandría",
         target: nil,
-        description: "Descubrimiento de los desertores romanos Gabiniani y los líderes de la cúspide: Lucius Septimius ('El Chacal') y Pothinus ('El Escorpión')."
+        description: "Los Gabiniani, regimientos de legionarios romanos desertores instalados en Alejandr\u00EDa, conspiran para tomar el control de la capital e impedir la llegada de Roma. Bayek sabotea sus arsenales y ejecuta en duelo al comandante Venator, mientras Cleopatra convoca un consejo de guerra ante la inminente llegada de Julio C\u00E9sar."
       ),
       EpisodeInfo.new(
         id: "15",
@@ -246,7 +246,7 @@ module OriginsLab
         level_recommended: 32,
         region: "Alejandría / Mar Mediterráneo",
         target: nil,
-        description: "Jugando como Aya. Infiltración con Cleopatra dentro de una alfombra ante Julio César. Asalto naval al Faro de Alejandría y acceso a la Tumba de Alejandro Magno."
+        description: "Aya comanda una de las mayores haza\u00F1as navales del Mediterr\u00E1neo: introduce clandestinamente a Cleopatra enrollada dentro de una alfombra persa en los aposentos imperiales de Julio C\u00E9sar en el palacio real, zarpando despu\u00E9s para romper el bloqueo naval ptolemaico y encender la pira de gu\u00EDa en la c\u00FAspide del Faro de Alejandr\u00EDa."
       ),
       EpisodeInfo.new(
         id: "16",
@@ -258,7 +258,7 @@ module OriginsLab
         level_recommended: 33,
         region: "Delta del Nilo",
         target: "Pothinus (El Escorpión)",
-        description: "Guerra abierta en el Nilo. Asesinato de Pothinus en el campamento real. César perdona a Septimius y pacta con Cleopatra, traicionando a Bayek y Aya."
+        description: "La Batalla del Nilo desata el choque total entre las legiones romanas y el ej\u00E9rcito de Ptolomeo XIII. Bayek y C\u00E9sar huyen en cuadriga bajo fuego de jabalinas, abatiendo al elefante de Pothinus ('El Escorpi\u00F3n') y derrotando a Septimius ('El Chacal'). Sin embargo, C\u00E9sar y Cleopatra amnist\u00EDan al verdugo, consumando la gran traici\u00F3n pol\u00EDtica a los Medjay."
       ),
 
       # ACTO 5: EL ORIGEN DE LA HERMANDAD Y EL IDUS DE MARZO (47 - 44 a.C.)
@@ -272,7 +272,7 @@ module OriginsLab
         level_recommended: 34,
         region: "Alejandría / Siwa",
         target: nil,
-        description: "Apolodoro muere desangrado en la tumba de Alejandro: el general romano Flavius Metellus es 'El León'. Flavius y Septimius roban los artefactos y marchan a Siwa."
+        description: "En el mausoleo subterr\u00E1neo de Alejandro Magno, Bayek y Aya encuentran a Apolodoro agonizante: el general romano Flavius Metellus es 'El Le\u00F3n' y ha robado el Cetro y la Manzana del Ed\u00E9n para marchar sobre Siwa. Al llegar al oasis, Bayek encuentra el templo arrasado y sostiene en llanto el cuerpo martirizado de su hermano Hepzefa."
       ),
       EpisodeInfo.new(
         id: "18",
@@ -284,7 +284,7 @@ module OriginsLab
         level_recommended: 35,
         region: "Kyrenaika / Cirene",
         target: "Flavius Metellus (El León)",
-        description: "Bayek persigue a Flavius hasta la Acrópolis de Cirene. Duelo contra el Gran Maestre empoderado por la Manzana de Edén. Venganza formal de Khemu."
+        description: "Bayek persigue a Flavius Metellus hasta la Acr\u00F3polis de Cirene en Kyrenaika. Flavius distorsiona el tejido de la realidad manipulando el Fruto del Ed\u00E9n con ilusiones fantasmales. Bayek resiste los embates gravitatorios, ejecuta al Gran Maestre y contempla en el Duat el alma de Khemu ascendiendo en paz a los campos de ca\u00F1as de Aaru."
       ),
       EpisodeInfo.new(
         id: "19",
@@ -296,7 +296,7 @@ module OriginsLab
         level_recommended: 36,
         region: "Playas de Alejandría",
         target: nil,
-        description: "Bayek y Aya fundan 'Los Ocultos'. Bayek arroja el cráneo de águila a la arena, naciendo el emblema milenario de los Asesinos."
+        description: "En el crep\u00FAsculo de una playa solitaria de Alejandr\u00EDa, Bayek y Aya sellan su divorcio y su despedida definitiva en el plano terrenal. Reconociendo que su dolor ha trascendido, fundan 'Los Ocultos' (The Hidden Ones) con el voto inmortal de servir a la luz desde la oscuridad, arrojando a la arena el cr\u00E1neo de \u00E1guila que da origen al blas\u00F3n de los Asesinos."
       ),
       EpisodeInfo.new(
         id: "20",
@@ -308,7 +308,7 @@ module OriginsLab
         level_recommended: 36,
         region: "Roma / Foro Romano",
         target: "Lucius Septimius (El Chacal)",
-        description: "Aya se infiltra en Roma armada con dagas dobles. Duelo a muerte contra Septimius armado con el Cetro de Edén en el Foro Romano."
+        description: "Aya viaja a las costas de Italia en el 44 a.C. y penetra en las defensas del Foro Romano. En un combate tit\u00E1nico entre las estatuas republicanas, Aya confronta a Lucius Septimius ('El Chacal') empu\u00F1ando el Cetro de Ed\u00E9n electrificado, esquivando sus ondas de choque y clavando sus hojas en su yugular para vengar la sangre de Siwa."
       ),
       EpisodeInfo.new(
         id: "21",
@@ -320,7 +320,7 @@ module OriginsLab
         level_recommended: 36,
         region: "Curia del Senado de Roma / Cueva de Egipto (Presente)",
         target: "Julio César (Padre de la Comprensión)",
-        description: "Idus de Marzo (44 a.C.). Asesinato de Julio César en el Senado Romano. Aya adopta el nombre de Amunet. En el presente, Layla Hassan es reclutada por William Miles."
+        description: "Idus de Marzo (15 de marzo del 44 a.C.). Aya se infiltra en la Curia del Senado Romano junto a Bruto y Casio, asestando la primera pu\u00F1alada a Julio C\u00E9sar ('El Padre de la Comprensi\u00F3n'). Aya adopta el nombre sagrado de AMUNET, mientras en el presente, Layla Hassan es rescatada en la cueva de Qattara por William Miles para liderar a los Asesinos modernos."
       )
     ].freeze
 

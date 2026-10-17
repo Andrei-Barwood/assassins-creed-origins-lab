@@ -77,26 +77,27 @@ module OriginsLab
       end
 
       def generate_summary
-        "Episodio 09 completado: Bayek escapa de las dunas con ayuda de Senu, recupera su equipo y ejecuta a Taharqa en el templo, perdonando a su hijo Kawab."
+        "Let\u00F3polis / Desierto del Delta, 48 a.C. Bayek despierta bajo un sol abrasador, enterrado en la arena hasta el cuello, con la carne ardiendo y buitres revoloteando sobre su cabeza. Desesperado, emite un silbido agudo que llama a su fiel caballo; el corcel galopa por las dunas, muerde los nudos de las ataduras y desentierra al Medjay. A pie, deshidratado y sufriendo delirios de insolaci\u00F3n en los que el cielo llueve escarabajos dorados, Bayek recupera su equipo en un campamento cercano. Con una sed insaciable de justicia, asalta las obras del colosal templo en construcci\u00F3n de Let\u00F3polis y atraviesa la garganta de Taharqa con su Hoja Oculta justo en el instante en que el peque\u00F1o hijo de Taharqa, Kawab, entra en la c\u00E1mara para abrazar a su padre."
       end
 
       def spoilers
         [
-          "Bayek decide perdonar al joven Kawab, quien reaparecerá años después como aliado en el DLC The Hidden Ones.",
-          "La muerte de Taharqa desmantela la red de torturas en el Delta del Nilo."
+          "El dilema moral frente al hijo inocente: El asesinato de Taharqa frente a los ojos de Kawab refleja tr\u00E1gicamente la propia experiencia de Bayek con Khemu. Bayek contempla el horror en la mirada del ni\u00F1o y comprende que su sed de venganza est\u00E1 perpetuando una cadena infinita de hu\u00E9rfanos y dolor.",
+          "El espejismo can\u00F3nico de los escarabajos: Las alucinaciones que sufre Bayek en las arenas de Let\u00F3polis son producto de la deshidrataci\u00F3n severa y el veneno residual, detonando el evento en el que insectos sagrados caen del cielo como lluvia negra y dorada.",
+          "La redenci\u00F3n p\u00F3stuma en los DLC: A\u00F1os m\u00E1s tarde, en el DLC 'Los Ocultos' (Sina\u00ED), Kawab reaparece como un l\u00EDder rebelde que busca venganza contra Bayek, cerrando un arco argumental formidable sobre el perd\u00F3n y la ruptura del ciclo de violencia."
         ]
       end
 
       def easter_eggs
         [
-          "Tras escapar del desierto, el calor extremo desencadena la lluvia de escarabajos alucinada (Trofeo 'Overheating')."
+          "Desbloqueo org\u00E1nico del trofeo 'Overheating': Este episodio es el momento narrativo ideal donde el juego expone al jugador a las condiciones exactas de insolaci\u00F3n para activar la lluvia de insectos necesaria para el trofeo de bronce 'Overheating'.",
+          "Let\u00F3polis y la ciudad sepultada: La Let\u00F3polis hist\u00F3rica fue redescubierta bajo metros de sedimentos del Nilo. En el juego, gran parte de las viviendas cl\u00E1sicas est\u00E1n semienterradas en dunas, reflejando el abandono progresivo de la ciudad durante el periodo helen\u00EDstico."
         ]
       end
 
       def mitigations
         [
-          "PREVENCIÓN TROFEO 'Overheating': Aprovechar la salida al desierto de Letópolis para caminar a pie hacia el Gran Mar de Arena hasta que lluevan escarabajos.",
-          "Recuperar el equipo del campamento militar de Pyknodas antes de atacar a Taharqa."
+          "Recuperaci\u00F3n inmediata del equipamiento: Al escapar de la arena, Bayek no tiene armas ni escudo. No intentar atacar a los guardias de Let\u00F3polis con los pu\u00F1os desnudos. Utilizar el sigilo entre la hierba alta para infiltrarse en la tienda del comandante donde reposa el cofre con todas las armas confiscadas."
         ]
       end
 

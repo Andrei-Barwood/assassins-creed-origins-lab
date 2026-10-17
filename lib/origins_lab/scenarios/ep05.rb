@@ -66,26 +66,26 @@ module OriginsLab
       end
 
       def generate_summary
-        "Episodio 05 completado: Gennadios es abatido en la Guarnición de Akra. Sus últimas palabras desatan la cacería de los 10 Phylakes por todo Egipto."
+        "Alejandr\u00EDa, 48 a.C. Gennadios, el implacable prefecto de la polic\u00EDa militar de Alejandr\u00EDa, ha intensificado la persecuci\u00F3n contra los rebeldes que apoyan a Cleopatra y ha puesto precio a la cabeza de Aya. Infiltr\u00E1ndose en la imponente Guarnici\u00F3n de Akra, Bayek burla las patrullas de arqueros en las almenas y asesta una estocada letal a Gennadios en el patio de armas. Con su \u00FAltimo aliento, el prefecto se burla de Bayek y le advierte: su muerte no traer\u00E1 la paz, sino que desatar\u00E1 la furia de los Phylakes, los diez cazarrecompensas de \u00E9lite que jurar\u00E1n cazar al Medjay por cada rinc\u00F3n de Egipto."
       end
 
       def spoilers
         [
-          "La muerte de Gennadios alerta a los 10 Phylakes mercenarios errantes con cuernos de guerra.",
-          "Derrotar a los 10 Phylakes recompensa el Atuendo Legendario 'Black Hood'."
+          "El origen del sistema de Phylakes: La muerte de Gennadios activa mec\u00E1nicamente el despliegue de los diez cazadores de \u00E9lite. Estos guerreros representan la guardia pretoriana ptolemaica corrompida por el dinero de la Orden.",
+          "La red de espionaje de Gennadios: En el escritorio del prefecto se descubren cartas que demuestran que Gennadios recib\u00EDa \u00F3rdenes directas de Eudoros ('La Serpiente') para limpiar la ciudad de mendigos, hu\u00E9rfanos y sacerdotes que cuestionaran las finanzas reales."
         ]
       end
 
       def easter_eggs
         [
-          "Dentro de la armería de Akra se halla un papiro que menciona a la guardia personal de Julio César en Roma."
+          "El himno de los Phylakes: Cuando un Phylakes entra a menos de 100 metros de Bayek, una banda sonora disonante de trompetas de bronce y cuernos de guerra de la antig\u00FCedad resuena en el juego, creando una atm\u00F3sfera de terror y persecuci\u00F3n implacable.",
+          "La carta 'La presa de Siwa': Tras matar al primer Phylakes, se desbloquea la misi\u00F3n de cacer\u00EDa 'Filakitas en el Ojo' que conduce al tesoro secreto de la armadura del Mar Negro."
         ]
       end
 
       def mitigations
         [
-          "Estrategia contra Phylakes: No luchar a campo abierto contra la montura; emboscar con arco de depredador desde azoteas y usar bombas de humo.",
-          "Sabotear el brasero de alarma de la guarnición de Akra antes de entablar combate para evitar refuerzos de nivel 12."
+          "Estrategia de evasi\u00F3n contra Phylakes tempranos: El primer Phylakes en aparecer en Alejandr\u00EDa es 'El Forastero' (Nivel 20). Si Bayek est\u00E1 en nivel 11 o 12, un solo golpe de su maza pesada provocar\u00E1 muerte instant\u00E1nea. NUNCA enfrentarlo a campo abierto. Si el icono del cuerno rojo parpadea en la br\u00FAjula, huir a caballo hacia las azoteas o sumergirse en los canales mar\u00EDtimos donde la IA enemiga no puede rastrear."
         ]
       end
 

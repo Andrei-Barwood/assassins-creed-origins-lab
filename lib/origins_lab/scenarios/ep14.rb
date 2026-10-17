@@ -64,26 +64,27 @@ module OriginsLab
       end
 
       def generate_summary
-        "Episodio 14 completado: Se desmantela la avanzada de los soldados Gabiniani y se revela la cúpula suprema: Lucius Septimius 'El Chacal' y el eunuco Pothinus 'El Escorpión'."
+        "Alejandr\u00EDa, 47 a.C. La capital de Egipto se encuentra al borde de la insurrecci\u00F3n armada. Los Gabiniani, un regimiento amotinado de legionarios romanos desertores dejados por Aulo Gabinio en el 55 a.C., han tomado el control de los cuarteles mar\u00EDtimos y conspiran con el eunuco Pothinus para asesinar a Cleopatra antes de que pueda reunirse con Julio C\u00E9sar. Bayek se infiltra en las fortificaciones costeras, sabotea los dep\u00F3sitos de brea y ejecuta en duelo singular al mercenario romano Venator. En el palacio real, Cleopatra celebra un consejo de guerra de emergencia: la flota romana de C\u00E9sar ha sido avistada en el horizonte y el destino de Egipto pende de un hilo."
       end
 
       def spoilers
         [
-          "Los Gabiniani son legionarios romanos traidores que sirven al eunuco Pothinus.",
-          "Julio César está navegando hacia Alejandría en persecución de Pompeyo el Grande."
+          "Los Gabiniani como mercenarios de la Orden: Los desertores romanos de Gabinio adoptaron costumbres helen\u00EDsticas y egipcias, pero conservaron la disciplina militar de las legiones, convirti\u00E9ndose en el ej\u00E9rcito privado de la Orden de los Antiguos en Alejandr\u00EDa.",
+          "El plan de asesinato de Venator: Venator pretend\u00EDa usar catapultas con proyectiles de brea incendiaria para prender fuego a la flota romana mientras atracaba en el Gran Puerto, culpando a Cleopatra de la masacre para justificar una invasi\u00F3n total de Egipto.",
+          "La fractura en la corte de Ptolomeo XIII: El joven rey fara\u00F3n es una marioneta asustada controlada enteramente por Pothinus ('El Escorpi\u00F3n') y el general Septimius ('El Chacal')."
         ]
       end
 
       def easter_eggs
         [
-          "Papiros en los barracones Gabiniani describen el asesinato de Pompeyo decapitado en la playa ante Ptolomeo XIII."
+          "El Gran Puerto de Alejandr\u00EDa (Portus Magnus): La reconstrucci\u00F3n del puerto incluye las esclusas mar\u00EDtimas y la isla de Antirhodos, donde se situaba el palacio privado de Cleopatra que en la actualidad yace sumergido a diez metros bajo el mar.",
+          "La menci\u00F3n de Pompeyo el Grande: En las cartas militares se menciona la decapitaci\u00F3n traicionera de Pompeyo Magno en las playas de Pelusio por orden de Pothinus para congraciarse con C\u00E9sar."
         ]
       end
 
       def mitigations
         [
-          "ALERTA CRÍTICA: Completar todas las misiones secundarias pendientes en Alejandría antes de activar la siguiente misión de Aya, ya que la ciudad entra en estado de asedio militar.",
-          "Asegurar un mínimo de nivel 31 antes de proceder."
+          "Defensa contra los lanceros Gabiniani: Los legionarios Gabiniani utilizan formaciones de escudo y jabalinas pilum. No intentar romper su guardia frontal con espadas ligeras; usar hachas de combate pesadas con la habilidad 'Rompe-Escudos' o arcos depredadores desde las terrazas."
         ]
       end
 

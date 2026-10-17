@@ -73,26 +73,27 @@ module OriginsLab
       end
 
       def generate_summary
-        "Episodio 11 completado: Hetepi 'El Lagarto' es identificado por su tos y su pañuelo azul y ejecutado en el templo de Menfis, liberando la ciudad de la peste simulada."
+        "Menfis, 48 a.C. La capital espiritual y antigua metr\u00F3polis del Bajo Egipto se desmorona: el aire huele a carne podrida, las aguas del Nilo est\u00E1n contaminadas y el buey sagrado Apis agoniza en su templo. Bayek investiga la maldici\u00F3n de 'El Lagarto'. Tras descubrir que la esposa del Sumo Sacerdote Pasherenptah ha sufrido abortos provocados por brebajes envenenados, Bayek es guiado por los sacerdotes a un trance ritual: su esp\u00EDritu desciende a las aguas tenebrosas del Duat a bordo de la barca solar de Ra, enfrent\u00E1ndose en un duelo tit\u00E1nico a la serpiente c\u00F3smica Apep. Al despertar, Bayek descubre que 'El Lagarto' es Hetepi, uno de los sacerdotes m\u00E1s respetados del Templo de Ptah, distinguido por una bufanda azul y una tos seca persistente."
       end
 
       def spoilers
         [
-          "Hetepi envenenaba al Toro Sagrado Apis con arsénico para hacer creer al pueblo que los dioses habían maldecido Egipto.",
-          "La muerte de Hetepi detona la visión de la barca solar de Ra enfrentando a la serpiente Apep."
+          "El envenenamiento del linaje de Menfis: Hetepi utilizaba plomo molido y toxinas de v\u00EDboras en los alimentos y aceites de unci\u00F3n del clero para debilitar la resistencia de los sacerdotes tradicionales y entregar el control del culto a la Orden de los Antiguos.",
+          "El simbolismo de la batalla contra Apep: La batalla on\u00EDrica contra Apep representa la lucha existencial de Bayek contra la desesperanza y la corrupci\u00F3n moral. El 'Arco de Luz' entregado en el sue\u00F1o es una met\u00E1fora de la pureza de la justicia que el Medjay debe mantener.",
+          "El m\u00E9todo de identificaci\u00F3n de Hetepi: En el patio del templo hay cinco sacerdotes id\u00E9nticos en atuendo blanco. Matar al sacerdote equivocado desata penalizaciones; la clave deductiva proporcionada por Pasherenptah es identificar al \u00FAnico sacerdote que tose continuamente y viste una bufanda de lino te\u00F1ida de azul oscuro."
         ]
       end
 
       def easter_eggs
         [
-          "El sueño psicodélico de Apep anticipa las dimensiones mitológicas del Más Allá de los faraones (Aaru, Heb Sed, Duat)."
+          "El embalsamamiento del buey Apis: En la misi\u00F3n secundaria 'Pr\u00E1ctica Mortuoria' en Menfis se puede observar el proceso hist\u00F3rico exacto de momificaci\u00F3n del toro sagrado Apis, que requer\u00EDa 70 d\u00EDas y tinas colosales de sal de natr\u00F3n.",
+          "Los murales de Ptah: El Templo de Ptah exhibe bajorrelieves que narran la creaci\u00F3n del universo a trav\u00E9s del pensamiento y la palabra del dios Ptah, un concepto teol\u00F3gico id\u00E9ntico al 'Logos' de los fil\u00F3sofos griegos."
         ]
       end
 
       def mitigations
         [
-          "PREVENCIÓN DE DESINCRONIZACIÓN: Identificar al sacerdote exacto observando quién tose y viste el talismán azul.",
-          "Desbloquear el trofeo 'Raging Bulls' en Menfis usando un dardo de furia en un buey cautivo."
+          "Identificaci\u00F3n limpia de Hetepi: NO atacar a los sacerdotes al azar en el templo de Ptah. Subir a las vigas del techo, usar a Senu en modo estacionario y esperar 30 segundos observando a los sospechosos hasta localizar al que tose y escupe sangre sobre el altar."
         ]
       end
 

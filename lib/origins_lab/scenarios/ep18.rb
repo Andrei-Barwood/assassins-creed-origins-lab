@@ -77,26 +77,27 @@ module OriginsLab
       end
 
       def generate_summary
-        "Episodio 18 completado: Duelo supremo en la Acrópolis de Cirene. Bayek vence las ilusiones de la Manzana de Edén y ejecuta a Flavius 'El León', vengando a su hijo Khemu."
+        "Kyrenaika / Acr\u00F3polis de Cirene, 47 a.C. Bayek persigue a Flavius Metellus hasta la opulenta Acr\u00F3polis de Cirene en las monta\u00F1as de Kyrenaika. Flavius, embriagado de poder divino, ha activado la Manzana del Ed\u00E9n: la acr\u00F3polis se encuentra sumida en una distorsi\u00F3n espacio-temporal donde los ciudadanos deambulan congelados como estatuas doradas. En el templo de Zeus, se libra la batalla definitiva. Flavius manipula la luz, proyecta copias fantasmales de s\u00ED mismo y distorsiona la gravedad. Con una determinaci\u00F3n sobrehumana forjada en el dolor, Bayek resiste las ilusiones, burla las proyecciones y clava su espada en el coraz\u00F3n de Flavius. En el tr\u00E1nsito del Duat, Bayek se despide espiritualmente de Khemu: la balanza de Ma'at pesa el coraz\u00F3n del ni\u00F1o contra la pluma de la verdad, y Khemu asciende libre hacia los campos de ca\u00F1as de Aaru. La venganza de Siwa se ha consumado."
       end
 
       def spoilers
         [
-          "Flavius confiesa la doctrina proto-templaria: el libre albedrío es un veneno y solo el control absoluto trae la paz.",
-          "Con la muerte de Flavius, el alma de Khemu finalmente cruza al Aaru (los Campos Elíseos egipcios)."
+          "La liberaci\u00F3n del alma de Khemu: Con la muerte de Flavius ('El Le\u00F3n'), Bayek cumple el juramento que inici\u00F3 su cruzada. Khemu finalmente encuentra descanso eterno en el Duat, lo que permite a Bayek abandonar su sed destructiva de venganza personal y transformar su lucha en un prop\u00F3sito universal de protecci\u00F3n de la libertad humana.",
+          "La ilusi\u00F3n de Flavius y el Fruto del Ed\u00E9n: Flavius cre\u00EDa ser un dios viviente destinado a instaurar un 'nuevo orden mundial' donde la humanidad obedeciera sin libre albedr\u00EDo. Sus delirios anticipan la ideolog\u00EDa de los Templarios modernos de Abstergo.",
+          "La recuperaci\u00F3n de la Manzana del Ed\u00E9n: Bayek asegura la Manzana de Ed\u00E9n, confiando su custodia temporal a los rebeldes del desierto para evitar que caiga nuevamente en manos de los monarcas ptolemaicos o senadores romanos."
         ]
       end
 
       def easter_eggs
         [
-          "El templo de Zeus en Cirene muestra frescos que representan batallas entre humanos primitivos y los dioses Isu."
+          "La arquitectura griega de Cirene: Kyrenaika muestra un marcado estilo arquitect\u00F3nico hel\u00E9nico cl\u00E1sico y romano provincial, con teatros excavados en la roca, ba\u00F1os monumentales y mosaicos que difieren profundamente del Egipto fara\u00F3nico tradicional.",
+          "La constelaci\u00F3n del Escorpi\u00F3n y el Le\u00F3n: Durante la batalla en el Duat, las constelaciones en el firmamento giran en espiral alrededor de la figura de Khemu, representando el tr\u00E1nsito celestial del fara\u00F3n hacia las estrellas imperecederas (Ikhemu-sek)."
         ]
       end
 
       def mitigations
         [
-          "Estrategia contra Flavius: Cuando teleporta y lanza ondas de ceguera, rodar hacia los lados y castigar con armas rápidas para romper su canalización de la Manzana.",
-          "Desbloquear el trofeo 'I'm Done Learning' adquiriendo una habilidad de maestro en el árbol de guerrero."
+          "Fase 2 de Flavius con la Manzana de Ed\u00E9n: Cuando Flavius pierde el 50% de su vida, se vuelve intangible y genera 3 clones de sombra que atacan simult\u00E1neamente. Rodar hacia atr\u00E1s para agrupar a los clones y usar una bomba de humo para aturdirlos al un\u00EDsono, permitiendo ejecutar a Flavius real cuando reaparece en el centro del altar."
         ]
       end
 

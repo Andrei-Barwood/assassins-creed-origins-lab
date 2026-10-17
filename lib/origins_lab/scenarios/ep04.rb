@@ -73,27 +73,27 @@ module OriginsLab
       end
 
       def generate_summary
-        "Episodio 04 completado: Bayek se reúne con Aya en Alejandría y recibe la legendaria Hoja Oculta de Darío. Aya confirma la muerte de Actaeon y Ktesos."
+        "Alejandr\u00EDa, 48 a.C. La capital de los Ptolomeos deslumbra con sus avenidas de m\u00E1rmol blanco, estatuas doradas y su colosal biblioteca. Siguiendo las marcas secretas dejadas en el monumento de Serapis, Bayek desciende a una cripta subterr\u00E1nea oculta bajo un aljibe. All\u00ED se funde en un apasionado y desgarrador abrazo con Aya. En la penumbra de la cripta, Aya entrega a Bayek una reliquia milenaria: la Hoja Oculta que perteneci\u00F3 a Dar\u00EDo, el persa que ejecut\u00F3 a Jerjes I en el 465 a.C. Aya revela con frialdad implacable que ella ya ha ajusticiado en Alejandr\u00EDa a dos miembros de la Orden: Actaeon ('El Buitre') y Ktesos ('El Carnero')."
       end
 
       def spoilers
         [
-          "La hoja oculta perteneció originalmente a Darío, quien la usó para matar al rey persa Jerjes I.",
-          "Aya ya trabaja al servicio directo de la reina exiliada Cleopatra VII."
+          "La g\u00E9nesis de la Hoja Oculta en Egipto: Cleopatra entreg\u00F3 la hoja de Dar\u00EDo a Aya tras reclutarla como agente secreta. Este brazalete mec\u00E1nico representa el primer puente directo entre el linaje persa de asesinos y la futura Hermandad egipcia.",
+          "Los asesinatos ya consumados por Aya: A diferencia de Bayek, que busca venganza puramente visceral por Khemu, Aya ya ha comprendido que la Orden de los Antiguos es una hidra pol\u00EDtica que busca moldear el destino del mundo conocido.",
+          "La conspiraci\u00F3n palaciega en Alejandr\u00EDa: Aya informa a Bayek que los miembros restantes de la Orden en la metr\u00F3polis son Gennadios, prefecto de la guardia ptolemaica, y un misterioso manipulador conocido solo como 'La Serpiente', que opera dentro de los c\u00EDrculos m\u00E1s \u00EDntimos de la corte real."
         ]
       end
 
       def easter_eggs
         [
-          "La estatua de Darío en la cámara secreta presagia las tumbas de los Asesinos Legendarios vistas en Assassin's Creed II.",
-          "Rollos en la biblioteca mencionan las profecías del Oráculo de Siwa sobre Alejandro Magno."
+          "La conexi\u00F3n con 'Legacy of the First Blade': La hoja entregada a Bayek es exactamente la misma arma empu\u00F1ada por Dar\u00EDo en el DLC de Assassin's Creed Odyssey, forjada en bronce y hierro persa.",
+          "El busto de Alejandro Magno en la biblioteca: En el distrito real, cerca de la Biblioteca de Alejandr\u00EDa, se halla una estatua con la inscripci\u00F3n original griega de Alejandro proclam\u00E1ndose hijo leg\u00EDtimo del dios Am\u00F3n-Ra tras su visita a Siwa en el 331 a.C."
         ]
       end
 
       def mitigations
         [
-          "Priorizar de inmediato la mejora del brazalete de la hoja oculta para evitar que los capitanes sobrevivan al sigilo.",
-          "Completar 'The Odyssey' y 'Serapis Unites' antes de iniciar misiones de conflicto abierto."
+          "Gesti\u00F3n de la Hoja Oculta en nivel 1: Al recibir la Hoja Oculta, su da\u00F1o de asesinato base es insuficiente para eliminar enemigos capitanes o comandantes de un solo golpe si superan el nivel de Bayek. Es prioritario subir la Hoja al menos a Nivel 3 recolectando hierro y bronce en convoyes de carros militares en el Delta."
         ]
       end
 

@@ -15,6 +15,15 @@
   <p><%= @ep_info.description %></p>
 </div>
 
+<!-- Sinopsis Narrativa Detallada -->
+<div style="background: rgba(200, 160, 80, 0.1); border-left: 4px solid var(--gold); padding: 1.4rem; border-radius: 6px; margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.7; color: #f5eedb; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
+    <strong style="color: var(--gold); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">📜 Crónica & Sinopsis Cinemática:</strong>
+    <span style="font-size: 0.8rem; color: var(--text-muted); background: #1a1b26; padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid var(--border);">Dossier: docs/episodios/ep<%= @ep_info.id %>_dossier.md</span>
+  </div>
+  <p style="margin: 0;"><%= @outcome[:summary] %></p>
+</div>
+
 <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
   <!-- Columna Izquierda: Eventos de la Simulación -->
   <div>

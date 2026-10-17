@@ -60,26 +60,27 @@ module OriginsLab
       end
 
       def generate_summary
-        "Episodio 03 completado: Bayek se despide de Hepzefa y cruza el Desierto de Mareotis rumbo a Alejandría para encontrarse con Aya."
+        "Siwa / Desierto de Mareotis, 49 a.C. Con Siwa liberada temporalmente pero herida en lo profundo, Bayek se despide de Hepzefa en las imponentes puertas fortificadas de la ciudadela. Con un arco de caza bendecido por su amigo y provisiones m\u00EDnimas, el Medjay emprende la solitaria traves\u00EDa a trav\u00E9s del implacable Desierto de Mareotis. Al caer la noche bajo un cielo tachonado de estrellas ancestrales, Bayek contempla las dunas infinitas, consciente de que deja atr\u00E1s su hogar terrenal para internarse en el avispero cosmopolita de Alejandr\u00EDa, donde su amada esposa Aya persigue los siguientes eslabones de la Orden."
       end
 
       def spoilers
         [
-          "Hepzefa cuida de Siwa y morirá trágicamente mucho después a manos de Flavius Metellus ('El León').",
-          "Aya ya ha empezado a forjar contactos con la realeza en Alejandría."
+          "El pacto silencioso de Hepzefa: Hepzefa jura quedarse en Siwa para reconstruir la resistencia civil y proteger la tumba de Khemu. Este sacrificio sellar\u00E1 su destino tr\u00E1gico m\u00E1s adelante en la historia, cuando los l\u00EDderes romanos de la Orden regresen para arrasar el oasis.",
+          "La carta oculta de Aya: Antes de partir, Hepzefa entrega a Bayek una misiva encriptada enviada por Aya desde Alejandr\u00EDa mediante marineros mercantes. Aya advierte que la Orden en la capital tiene tent\u00E1culos en la corte real de Ptolomeo XIII y que dos de sus miembros ya han sido ejecutados por su propia mano."
         ]
       end
 
       def easter_eggs
         [
-          "Círculo de piedras de Amón en Siwa: el inicio de los recuerdos interactivos con Khemu mirando las estrellas."
+          "El espejismo del \u00E1rbol en el Lago Mareotis: Al cruzar las dunas entre Siwa y Mareotis en horas de mediod\u00EDa, se detona uno de los primeros espejismos del desierto: un \u00E1rbol sic\u00F3moro floreciente que desaparece al aproximarse a menos de diez pasos.",
+          "El Templo de Sejmet en Yamu: El templo a orillas del lago est\u00E1 dedicado a la diosa leona de la guerra y la sanaci\u00F3n. All\u00ED se celebra el festival de la cerveza te\u00F1ida de rojo, recordando el mito donde Ra embriag\u00F3 a Sejmet para evitar el exterminio de la humanidad."
         ]
       end
 
       def mitigations
         [
-          "Sincronizar la atalaya solitaria del Desierto de Mareotis para habilitar viaje rápido de regreso a Siwa.",
-          "Completar 'Lady of Slaughter' en Yamu para obtener el Atuendo de Sejmet y subir a nivel 8 antes de entrar a Alejandría."
+          "Brecha de nivel en el Lago Mareotis: El Lago Mareotis exige nivel 8 a 10. No avanzar por la calzada principal sin haber completado las secundarias de Yamu ('Emboscada en el Templo' y 'Sabor de su Picadura'), las cuales otorgan m\u00E1s de 2,500 XP y equipamiento azul excepcional.",
+          "Caza de flamencos y cocodrilos en las marismas: Recolectar cuero blando de los flamencos y cuero duro de los cocodrilos en las orillas de Mareotis para subir el Brazal a nivel 2 (+20% da\u00F1o cuerpo a cuerpo) antes de pisar suelo alejandrino."
         ]
       end
 

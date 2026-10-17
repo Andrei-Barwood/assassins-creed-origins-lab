@@ -81,26 +81,26 @@ module OriginsLab
       end
 
       def generate_summary
-        "Episodio 13 completado: Bayek se corona campeón en la Arena de Krokodilopolis y ejecuta a Berenike 'El Cocodrilo' en su villa, haciendo justicia por la pequeña Shadya."
+        "Krokodilopolis / Villa de Faiyum, 48 a.C. Para acercarse a los c\u00EDrculos \u00EDntimos de Berenike, Bayek se inscribe como gladiador en la colosal Arena de Krokodilopolis junto a su antigua amiga de Siwa, la feroz cazadora nubia Kensa. Tras superar rondas brutales y abatir a los temidos 'Hermanos Galos' bajo el rugido de la multitud, Bayek descubre que Kensa ha sido contratada como guardaespaldas personal de Berenike. Esa misma noche, Bayek se infiltra en la fortificada villa de Berenike. Kensa interpone su escudo para proteger a su patrona, obligando a un duelo a muerte entre hermanos de armas. Bayek vence a Kensa y ejecuta a Berenike en su propio lecho, clav\u00E1ndole la Hoja Oculta mientras le susurra: 'Esto es por Shadya'."
       end
 
       def spoilers
         [
-          "Kensa, la mejor amiga de la infancia de Bayek en Siwa, trabaja como guardaespaldas pagada por Berenike y se interpone en la venganza.",
-          "Con la caída de Berenike, los cuatro lugartenientes principales de la Orden han sido aniquilados."
+          "La ca\u00EDda moral de Kensa: Kensa simboliza lo que Bayek pudo haber sido si hubiera puesto sus habilidades al servicio del mejor postor en lugar de defender la justicia del Medjay. Su muerte en la villa es una tragedia inevitable de lealtades enfrentadas.",
+          "El desmantelamiento de las Cuatro Bestias: Con la muerte de Berenike, los cuatro l\u00EDderes territoriales de la Orden (Escarabajo, Hiena, Lagarto y Cocodrilo) han sido purgados. Sin embargo, Bayek recibe un mensaje urgente de Apolodoro: la guerra civil ha estallado en Alejandr\u00EDa con la llegada inminente de la flota romana de Julio C\u00E9sar."
         ]
       end
 
       def easter_eggs
         [
-          "La Arena de Krokodilopolis rinde tributo directo a Gladiator, con arenas sangrientas y ovaciones imperiales."
+          "El trofeo 'Are You Not Entertained?': El nombre del trofeo de la arena de Krokodilopolis es una referencia directa a la ic\u00F3nica frase de M\u00E1ximo D\u00E9cimo Meridio en la pel\u00EDcula Gladiator (2000) de Ridley Scott.",
+          "Los gladiadores galos y celtas: Hist\u00F3ricamente, Ptolomeo introdujo prisioneros de guerra galos tras las campa\u00F1as del Mediterr\u00E1neo para combatir en anfiteatros como entretenimiento ex\u00F3tico."
         ]
       end
 
       def mitigations
         [
-          "En la arena, usar el ataque cargado con armas pesadas para romper la postura de escudos dobles de los gladiadores galos.",
-          "Desbloquear el trofeo 'Are You Not Entertained?' completando todos los combates de la arena."
+          "T\u00E1ctica contra los Hermanos Galos en la Arena: El hermano m\u00E1s grande usa un garrote pesado imparable, mientras que el m\u00E1s \u00E1gil arroja jabalinas. Concentrar todo el fuego de flechas ligeras y ataques de sobrecarga en el hermano menor para eliminar la amenaza a distancia antes de encarar al gigante."
         ]
       end
 

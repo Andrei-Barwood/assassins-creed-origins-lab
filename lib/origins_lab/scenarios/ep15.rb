@@ -78,27 +78,27 @@ module OriginsLab
       end
 
       def generate_summary
-        "Episodio 15 completado: Jugando como Aya. Cleopatra se presenta ante Julio César emergiendo de una alfombra. Asalto naval al Faro de Alejandría y hallazgo de los artefactos en la Tumba de Alejandro Magno."
+        "Alejandr\u00EDa / Mar Mediterr\u00E1neo, 47 a.C. En una de las secuencias m\u00E1s legendarias de la antig\u00FCedad, Aya toma el mando de las operaciones encubiertas. A bordo de la fal\u00FAa de Apolodoro bajo un manto de niebla marina, Aya envuelve a Cleopatra en una lujosa alfombra persa y la introduce clandestinamente a trav\u00E9s del puerto hasta los aposentos privados de Julio C\u00E9sar en el Palacio Real. C\u00E9sar queda cautivado por la audacia de la reina. Cuando la flota de Ptolomeo cerca el palacio, Aya zarpa al Mediterr\u00E1neo comandando una trirreme, hunde las naves egipcias en un combate naval feroz y escala el colosal Faro de Alejandr\u00EDa bajo una lluvia de catapultas, encendiendo la pira dorada en su c\u00FAspide para guiar el asalto de las legiones de C\u00E9sar."
       end
 
       def spoilers
         [
-          "La tumba de Alejandro Magno custodiaba una Manzana del Edén y el Cetro de la Primera Civilización.",
-          "César queda deslumbrado por Cleopatra y ordena a sus legiones intervenir en la guerra civil egipcia."
+          "El mito de la alfombra de Cleopatra: El juego recrea con precisi\u00F3n hist\u00F3rica la an\u00E9cdota narrada por Plutarco en sus 'Vidas Paralelas', mostrando a Cleopatra emergiendo de la alfombra atada para exigir la alianza de Roma.",
+          "El control temporal de Aya: En este episodio el jugador toma el control de Aya. Como se establece en las reglas de mitigaci\u00F3n, las ubicaciones del mapa y cofres descubiertos durante esta misi\u00F3n NO se guardan en el registro de Bayek.",
+          "La fascinaci\u00F3n de C\u00E9sar por los orbes de poder: Al conocer a Aya y Bayek, C\u00E9sar muestra un inter\u00E9s desmedido por los 'fetiches de los dioses' que la Orden busca recolectar, anticipando su vinculaci\u00F3n final con los Antiguos."
         ]
       end
 
       def easter_eggs
         [
-          "Recreación cinematográfica exacta del mito de la alfombra registrado por el historiador Plutarco.",
-          "El Faro de Alejandría como una de las Siete Maravillas del Mundo Antiguo plenamente escalable."
+          "El Faro de Alejandr\u00EDa (Una de las 7 Maravillas del Mundo Antiguo): Con m\u00E1s de 100 metros de altura, su reconstrucci\u00F3n arquitect\u00F3nica con m\u00E1rmol blanco, espejos c\u00F3ncavos de bronce pulido y la estatua de Poseid\u00F3n en la c\u00FAspide es uno de los mayores logros t\u00E9cnicos del juego.",
+          "El salto de fe desde la c\u00FAspide del Faro: Realizar el salto de fe desde la punta del faro hacia el mar Mediterr\u00E1neo es el salto con mayor tiempo de ca\u00EDda libre de toda la saga Assassin's Creed."
         ]
       end
 
       def mitigations
         [
-          "PREVENCIÓN: Recordar que Aya no comparte el árbol de habilidades ni el inventario de arcos de Bayek. Usar esquivas rápidas y parry en el Faro.",
-          "No desviarse del objetivo de la misión para evitar desincronizaciones."
+          "Combate naval con la trirreme de Aya: Mantener los remos en avance constante para evitar ser embestido en los flancos por los brulotes incendiarios. Disparar andanadas de flechas incendiarias a los timones enemigos y usar las catapultas de cubierta solo cuando los barcos queden atravesados a tiro de borda."
         ]
       end
 
