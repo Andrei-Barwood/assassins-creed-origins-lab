@@ -4,10 +4,19 @@ require "sinatra/base"
 require "erb"
 require_relative "../origins_lab"
 
+# Cargar todos los escenarios para ejecución web
+OriginsLab::Manifest.all_episodes.each do |ep|
+  file = File.expand_path("scenarios/ep#{ep.id}.rb", __dir__)
+  require file if File.exist?(file)
+end
+
 module OriginsLab
   class WebApp < Sinatra::Base
-    set :root, File.expand_path("..", __dir__)
-    set :views, File.expand_path("origins_lab/views", __dir__)
+    set :port, 4567
+    set :bind, "0.0.0.0"
+    set :environment, :development
+    set :root, File.expand_path("../..", __dir__)
+    set :views, File.expand_path("views", __dir__)
     set :public_folder, File.expand_path("../../public", __dir__)
 
     helpers do
@@ -36,7 +45,7 @@ module OriginsLab
       ep_info = OriginsLab::Manifest.find(params[:id])
       halt 404, "Episodio no encontrado" unless ep_info
 
-      scenario_file = File.expand_path("origins_lab/scenarios/ep#{ep_info.id}.rb", __dir__)
+      scenario_file = File.expand_path("scenarios/ep#{ep_info.id}.rb", __dir__)
       require scenario_file if File.exist?(scenario_file)
 
       scenario_class = Object.const_get(ep_info.class_name)
